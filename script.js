@@ -10,10 +10,10 @@ let playerTries = [];
 while (inputNumber !== randomNumber){
     if (inputNumber < randomNumber){
         playerTries.push(inputNumber)
-        console.log("The right number is smaller.")
+        console.log("The right number is greater.")
     } else if (inputNumber> randomNumber){
         playerTries.push(inputNumber)
-        console.log("The right number is greater.")
+        console.log("The right number is smaller.")
     }
 
     inputNumber = parseInt(prompt("Insert a number."))
