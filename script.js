@@ -1,4 +1,4 @@
-/* function checkLength(firstWord, secondWord){
+function checkLength(firstWord, secondWord){
     if (firstWord.length === secondWord.length){
         console.log(firstWord);
         console.log(secondWord);
@@ -18,7 +18,9 @@ const secondTyped = prompt("Type second word");
 
 checkLength(firstTyped, secondTyped); */
 
-const firstWord = prompt ("Type first word");
+//correction!!!!!!!!!!!!!!
+
+/* const firstWord = prompt ("Type first word");
 
 const secondWord = prompt ("Type second word");
 
@@ -40,4 +42,4 @@ function checkLength(firstWord, secondWord){
     } else{
         return false;
     }
-}
+} */
