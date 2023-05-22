@@ -1,8 +1,5 @@
-let sameLength = false
-
 function checkLength(firstWord, secondWord){
     if (firstWord.length === secondWord.length){
-        sameLength = true;
         console.log(firstWord);
         console.log(secondWord);
         console.log("Same length!");
