@@ -37,5 +37,7 @@ if (checkLength(firstWord, secondWord)){
 function checkLength(firstWord, secondWord){
     if (firstWord.length === secondWord.length){
         return true;
+    } else{
+        return false;
     }
 }
