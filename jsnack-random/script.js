@@ -1,17 +1,25 @@
-let myNumbers = [];
+function generateRandomNumber(minimumNumber, maximumNumber){
+    const randomNumber = Math.floor(Math.random() * (maximumNumber - minimumNumber +1) + minimumNumber);
 
-let randomNumber;
+    return randomNumber;
+}
 
-function generateNumber(){
-    for (let i = 0; i < 4; i++){
-        randomNumber = Math.floor(Math.random() * 5 + 1);
-        
-        if (myNumbers[i] !== randomNumber){
-            myNumbers.push(randomNumber);
+function generateUniqueNumbers(minNum, maxNum, elements){
+    let myNumbers = [];
+
+    if((maxNum - minNum) < elements){
+        return [];
+    }
+
+    while(myNumbers.length < elements){
+        const randomUniqueNumber = generateRandomNumber(minNum, maxNum);
+
+        if(!myNumbers.includes(randomUniqueNumber)){
+            myNumbers.push(randomUniqueNumber);
         }
     }
 
-console.log(myNumbers);
+    console.log(myNumbers);
 }
 
-generateNumber();
+generateUniqueNumbers(1, 5, 4);
