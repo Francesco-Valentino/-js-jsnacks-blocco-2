@@ -33,7 +33,8 @@ let peperoni = [
 let pesoTotale = 0;
 
 for (let i = 0; i < peperoni.length; i++){
-    pesoTotale += peperoni[i.peso];
+    pesoTotale += peperoni[i].peso;
+    console.log(peperoni[i].peso);
 }
 
 console.log(pesoTotale);
