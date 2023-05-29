@@ -3,10 +3,10 @@ let giocatore = {
     nome: "Carlo",
     cognome: "Soffici",
     età: 29,
-    mediPuntiPerPartita: 25,
-    percentualeSuccesso: "50%",
-    stoppate: 15,
-    tiri: 60, 
+    mediPuntiPerPartita: getRandomInt(0, 50),
+    percentualeSuccesso: getRandomInt(0, 100) + "%",
+    stoppate: getRandomInt(0, 30),
+    tiri: getRandomInt(20, 100), 
 }
 
 function getID(lettersNumber) {
@@ -26,3 +26,5 @@ function getRandomInt(minNumber, maxNumber){
 
     return randomInt;
 }
+
+console.log(giocatore);
