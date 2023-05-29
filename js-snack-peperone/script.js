@@ -28,7 +28,7 @@ let peperoni = [
         lunghezza: 46,
         varietà: "goliath"
     }
-]
+];
 
 let pesoTotale = 0;
 
