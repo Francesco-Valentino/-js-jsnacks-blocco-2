@@ -96,6 +96,16 @@ for (let i = 0; i < cars.length; i++){
     }
 }
 
+let dieselCars = [];
+
+cars.forEach((element, index, array) => {
+    if(element.alimentazione === "diesel"){
+        dieselCars.push(element);
+    }
+})
+
+console.log(dieselCars);
+
 const otherCars = cars.filter(element => element.alimentazione !== "benzina" && element.alimentazione !== "diesel")
 
 console.log(otherCars);
